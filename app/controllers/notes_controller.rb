@@ -26,9 +26,16 @@ class NotesController < ApplicationController
   end
 
   def update
+    if @note.update(note_params)
+      redirect_to @note
+    else
+      render 'edit'
+    end
   end
 
   def destroy
+    @note.destroy
+    redirect_to @note
   end
 
   private
@@ -40,5 +47,4 @@ class NotesController < ApplicationController
   def note_params
     params.require(:note).permit(:title, :content)
   end
-
 end
