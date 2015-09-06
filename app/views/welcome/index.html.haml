@@ -1,30 +1,31 @@
 #banner
-  .banner_content
-    %h1  Notepal
-    %p Always forgot your Idea? Write it in Notepal, Never forget your idea again.
-    %button= link_to "Sign Up", new_user_registration_path
-#terstimonial
-  .wrapper
-    %p.quote "The best notebook application."
-    %p.name - Alandin
+	.banner_content
+		%h1.quote "A Simple notebook application."
+		%p.name - Notepal
+		%button= link_to "Sign Up", new_user_registration_path
+#testimonial
+	.wrapper
+		%p.quote 
+		%p.name - Notepal
 #callouts
-  .callout_inner
-    .wrapper
-      .callout
-        %h2 Diary
-        %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+	.callout_inner
+		.wrapper
+			.callout
+				%h2 Notes
+				%p Viral Echo Park Intelligentsia tattooed, craft beer organic authentic polaroid tousled mlkshk church-key. Fanny pack Banksy vegan  authentic Helvetica.
 
-      .callout
-        %h2 Personal Notes
-        %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+			.callout
+				%h2 Books
+				%p Viral Echo Park Intelligentsia tattooed, craft beer organic authentic polaroid tousled mlkshk church-key. Fanny pack Banksy vegan  authentic Helvetica.
 
-      .callout
-        %h2 Public Notes
-        %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+			.callout
+				%h2 Diary
+				%p Viral Echo Park Intelligentsia tattooed, craft beer organic authentic polaroid tousled mlkshk church-key. Fanny pack Banksy vegan  authentic Helvetica.
 #bottom_cta
-  .wrapper
-    %h2 For Realz!
-    %p I want you to sign up... If you don’t. I will find you!
-    %button= link_to "Click Meee!!!", new_user_registration_path
+	.wrapper
 
-        
+		%p You will be having a FREE Diary if you sign up!
+		%button= link_to "Click Meee!!!", new_user_registration_path
+
+%footer
+	%p &copy; Allanzzz...
